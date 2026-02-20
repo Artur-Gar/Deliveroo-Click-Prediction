@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deliveroo-click-prediction"
+version = "0.1.0"
+description = "Deliveroo ad click prediction package and Streamlit app."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+authors = [
+    { name = "Artur Garipov", email = "artur.gar.fin@gmail.com" }
+]
+dependencies = [
+    "joblib",
+    "numpy",
+    "pandas",
+    "plotly",
+    "pyreadr",
+    "scikit-learn",
+    "streamlit",
+    "xgboost"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
