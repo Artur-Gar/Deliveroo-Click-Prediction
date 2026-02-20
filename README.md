@@ -10,24 +10,9 @@ poetry shell
 ```
 
 ## Usage
-Train the model:
-```bash
-python scripts/train.py
-```
-
-Run batch prediction (default output: `data/processed/batch_predictions.csv`):
-```bash
-python scripts/predict_batch.py
-```
-
 Run the Streamlit app:
 ```bash
 streamlit run scripts/run_app.py
-```
-
-Minimal import example:
-```python
-from deliveroo_click_prediction.model import train_xgb_model
 ```
 
 ## Structure
